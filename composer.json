@@ -1,0 +1,37 @@
+{
+    "name": "mlibazisi/tinypress",
+    "description": "A Simple PHP Web Framework",
+    "keywords": ["framework"],
+    "homepage": "http://tinypress.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mlibazisi Mabandla",
+            "email": "mlibazisi@tinypress.org"
+        }
+    ],
+    "require": {
+      "symfony/routing": "2.8.*@dev",
+      "symfony/event-dispatcher": "2.8.*@dev",
+      "symfony/http-foundation": "2.8.*@dev",
+      "symfony/dependency-injection": "2.8.*@dev",
+      "symfony/http-kernel": "2.8.*@dev",
+      "symfony/config": "2.8.*@dev",
+      "symfony/yaml": "2.8.*@dev",
+      "pimple/pimple": "3.0.0",
+      "symfony/templating": "2.8.*@dev",
+      "twbs/bootstrap": "3.3.4",
+      "symfony/asset": "2.8.*@dev",
+      "symfony/validator": "2.8.*@dev",
+      "doctrine/dbal": "2.5.*@dev",
+      "hautelook/phpass": "0.3.4",
+      "symfony/stopwatch": "2.8.*@dev",
+      "stripe/stripe-php": "2.*",
+      "twilio/twilio-php": "*",
+      "phaxio/phaxio-php": "*",
+      "symfony/swiftmailer-bundle": "2.3.8"
+    },
+    "autoload": {
+        "psr-4": { "TinyPress\\": "tinypress/", "app\\": "app/" }
+    }
+}

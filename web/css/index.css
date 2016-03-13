@@ -1,0 +1,162 @@
+body {
+    padding-top: 50px;
+    background-color: #ffffff;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #ffb7b7; /* Gecko Browsers */
+}
+.site-wrapper {
+    background-color: #fafafa;
+}
+.header {
+    text-align: center;
+    padding: 25px 0;
+}
+.logo {
+    height: 30px;
+    margin: 10px 0;
+}
+.footer-logo{
+    height: 30px;
+    margin: 0 0 3px 0;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 26px;
+}
+.header h2 {
+    margin: 0;
+    font-weight: 300;
+}
+.header p {
+    margin-bottom: 0;
+}
+.search-bar {
+    background: #f1524c;
+    border: 1px dashed #ffffff;
+    z-index: 999;
+}
+.navbar-reddish {
+    background-color: #f1524c;
+    border-color: #f1524c;
+}
+.navbar-reddish a {
+    color: #FFF;
+}
+.navbar-reddish a:hover {
+    background-color: transparent !important;
+    color: #FFF;
+}
+.thumbnail {
+    border: 1px solid #FFF;
+}
+.search-bar{
+    width: 300px !important;
+    letter-spacing: 1px;
+}
+.search-bar:focus{
+   background: #fff;
+}
+.navbar .glyphicon-search {
+    color: #fff;
+}
+#q::-webkit-input-placeholder {color: white;font-weight: lighter;}
+#q:-moz-placeholder {color: white;font-weight: lighter;}
+#q::-moz-placeholder {color: white;font-weight: lighter;}
+#q:-ms-input-placeholder {color: white;font-weight: lighter;}
+
+input[type="search"]:focus{
+    border-color: #fff;
+}
+.food-item a:hover {
+    color: #337ab7;
+}
+.food-item a {
+    color: #777;
+}
+.filters {
+    margin-bottom: 10px;
+}
+.filters a{
+    color: #333;
+    font-weight: bold;
+}
+.food-item-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+.header .glyphicon-map-marker {
+    color: #18bdcb;
+}
+.food-item .glyphicon-cutlery {
+    color: #18bdcb;
+}
+.food-item-price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer {
+    padding: 20px 0 0 0;
+    color: #999;
+    background: #fff;
+    font-size: 12px;
+    border-top: 1px solid #e7e7e7;
+}
+footer .row {
+    margin-bottom: 25px;
+}
+footer a {
+    color: inherit;
+}
+footer a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+.thumbnail,
+.food-item{
+    position: relative;
+}
+.hidden-caption,
+.food-item-img{
+    z-index: 1;
+}
+
+.hidden-caption {
+    padding: 9px;
+    position: absolute;
+    bottom: 9px;
+    color: #ff4d4f !important;
+
+}
+.pink {
+    color: #f27490;
+}
+.search-address {
+    margin-right:25px;
+    padding-left: 15px;
+}
+.caption {
+    z-index: 9;
+    position: relative;
+    background: inherit;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 99;
+}

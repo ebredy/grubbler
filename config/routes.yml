@@ -1,0 +1,212 @@
+index:
+    path:     /
+    defaults: { _controller: 'app\Controllers\Index::index' }
+    methods:  [GET]
+signin:
+    path:     /signin
+    defaults: { _controller: 'app\Controllers\Account::signIn' }
+    methods:  [GET,POST]
+logout:
+    path:     /logout
+    defaults: { _controller: 'app\Controllers\Account::signOut' }
+    methods:  [GET]
+signup:
+    path:     /signup
+    defaults: { _controller: 'app\Controllers\Account::signUp' }
+    methods:  [GET,POST]
+settings:
+    path:     /settings
+    defaults: { _controller: 'app\Controllers\Account::settings' }
+    methods:  [GET,POST]
+reset_password:
+    path:     /account/reset_password
+    defaults: { _controller: 'app\Controllers\Account::resetPassword' }
+    methods:  [GET,POST]
+close_account:
+    path:     /account/close
+    defaults: { _controller: 'app\Controllers\Account::closeAccount' }
+    methods:  [GET,POST]
+restaurants:
+    path:     /restaurants
+    defaults: { _controller: 'app\Controllers\Restaurant::index' }
+    methods:  [GET,POST]
+menu:
+    path:     /restaurants/{restaurant_id}
+    defaults: { _controller: 'app\Controllers\Restaurant::index' }
+    methods:  [GET,POST]
+checkout:
+    path:     /checkout
+    defaults: { _controller: 'app\Controllers\Checkout::index' }
+    methods:  [GET,POST]
+cart:
+    path:    /cart
+    defaults: { _controller: 'app\Controllers\Cart::index' }
+    methods:  [GET,PUT]
+card:
+    path:    /cards/{card_id}
+    defaults: { _controller: 'app\Controllers\Card::index' }
+    methods:  [GET,POST]
+payments:
+    path:    /payments
+    defaults: { _controller: 'app\Controllers\Payment::index' }
+    methods:  [GET]
+payment:
+    path:    /payments/{payment_id}
+    defaults: { _controller: 'app\Controllers\Payment::index' }
+    methods:  [GET]
+orders:
+    path:    /orders
+    defaults: { _controller: 'app\Controllers\Order::index' }
+    methods:  [GET,PUT]
+order:
+    path:    /orders/{order_id}
+    defaults: { _controller: 'app\Controllers\Order::index' }
+    methods:  [GET,PUT]
+cart_add_form:
+    path:    /cart/add/{menu_id}
+    defaults: { _controller: 'app\Controllers\Cart::getAddItemForm' }
+    methods:  [GET]
+cart_item:
+    path:    /cart/{item_id}
+    defaults: { _controller: 'app\Controllers\Cart::index' }
+    methods:  [GET,POST,DELETE]
+cart_tip:
+    path:    /tip
+    defaults: { _controller: 'app\Controllers\Cart::updateTip' }
+    methods:  [POST]    
+addresses:
+    path:    /addresses
+    defaults: { _controller: 'app\Controllers\Address::index' }
+    methods:  [GET,POST]
+manage_address:
+    path:    /addresses/{address_id}
+    defaults: { _controller: 'app\Controllers\Address::index' }
+    methods:  [GET,POST]
+set_current_address:
+    path:    /addresses/{address_id}/current
+    defaults: { _controller: 'app\Controllers\Address::setCurrent' }
+    methods:  [GET,POST]
+order_notifications:
+    path:    /notifications
+    defaults: { _controller: 'app\Controllers\OrderNotification::index' }
+    methods:  [GET,POST]
+order_notification:
+    path:    /notifications/{process_status}
+    defaults: { _controller: 'app\Controllers\OrderNotification::index' }
+    methods:  [GET,POST]
+order_notification_call:
+    path:    /notifications/call/{orderNotification_ID}
+    defaults: { _controller: 'app\Controllers\OrderNotification::call' }
+    methods:  [GET,POST]
+order_notification_voice_response:
+    path:    /notifications/response/{orderNotification_ID}
+    defaults: { _controller: 'app\Controllers\OrderNotification::response' }
+    methods:  [GET,POST]
+order_notification_voice_confirm:
+    path:    /notifications/confirm/{orderNotification_ID}
+    defaults: { _controller: 'app\Controllers\OrderNotification::confirm' }
+    methods:  [GET,POST]
+order_notification_voice_reject:
+    path:    /notifications/reject/{orderNotification_ID}
+    defaults: { _controller: 'app\Controllers\OrderNotification::reject' }
+    methods:  [GET,POST]
+admin:
+    path:    /gadmin
+    defaults: { _controller: 'app\Controllers\Admin::index' }
+    methods:  [GET,POST]  
+admin_signin:
+    path:    /gadmin/signin
+    defaults: { _controller: 'app\Controllers\Admin::signin' }
+    methods:  [GET,POST]
+admin_search:
+    path:    /gadmin/search/{search_type}
+    defaults: { _controller: 'app\Controllers\Admin::search' }
+    methods:  [GET,POST]    
+admin_signout:
+    path:    /gadmin/signout
+    defaults: { _controller: 'app\Controllers\Admin::signout' }
+    methods:  [GET,POST]  
+admin_permissions:
+    path:    /gadmin/permissions
+    defaults: { _controller: 'app\Controllers\Admin::permission' }
+    methods:  [GET,POST] 
+admin_permissions:
+    path:    /gadmin/permissions/{permission_id}
+    defaults: { _controller: 'app\Controllers\Admin::permission' }
+    methods:  [GET,POST] 
+admin_permission_add:
+    path:    /gadmin/permissions/add
+    defaults: { _controller: 'app\Controllers\Admin::permissionAdd' }
+    methods:  [POST] 
+admin_permission_edit:
+    path:    /gadmin/permissions/edit/{permission_id}
+    defaults: { _controller: 'app\Controllers\Admin::permissionEdit' }
+    methods:  [GET,POST]    
+admin_permission_delete:
+    path:    /gadmin/permissions/delete/{permission_id}
+    defaults: { _controller: 'app\Controllers\Admin::permissionDelete' }
+    methods:  [GET,POST]      
+admin_user:
+    path:    /gadmin/users/{user_id}
+    defaults: { _controller: 'app\Controllers\Admin::user' }
+    methods:  [GET]
+admin_users:
+    path:    /gadmin/users
+    defaults: { _controller: 'app\Controllers\Admin::user' }
+    methods:  [GET,POST]     
+admin_user_add:
+    path:    /gadmin/users/add
+    defaults: { _controller: 'app\Controllers\Admin::userAdd' }
+    methods:  [POST] 
+admin_user_edit:
+    path:    /gadmin/users/edit/{user_id}
+    defaults: { _controller: 'app\Controllers\Admin::userEdit' }
+    methods:  [GET,POST]
+admin_user_delete:
+    path:    /gadmin/users/delete/{user_id}
+    defaults: { _controller: 'app\Controllers\Admin::userDelete' }
+    methods:  [GET,POST]     
+admin_restaurant:
+    path:    /gadmin/restaurants/{restaurant_id}
+    defaults: { _controller: 'app\Controllers\Admin::restaurants' }
+    methods:  [GET,POST]     
+admin_restaurants:
+    path:    /gadmin/restaurants
+    defaults: { _controller: 'app\Controllers\Admin::restaurants' }
+    methods:  [GET,POST] 
+admin_restaurant_add:
+    path:    /gadmin/restaurant/add
+    defaults: { _controller: 'app\Controllers\Admin::restaurantAdd' }
+    methods:  [GET,POST]  
+admin_restaurant_edit:
+    path:    /gadmin/restaurant/edit/{restaurant_id}
+    defaults: { _controller: 'app\Controllers\Admin::restaurantEdit' }
+    methods:  [GET,POST]    
+admin_restaurant_delete:
+    path:    /gadmin/restaurant/delete/{restaurant_id}
+    defaults: { _controller: 'app\Controllers\Admin::restaurantDelete' }
+    methods:  [GET,POST]
+admin_restaurant_address_coordinates:
+    path:    /gadmin/getcoordinates
+    defaults: { _controller: 'app\Controllers\Admin::getCoordinates' }
+    methods:  [GET,POST]    
+admin_menu:
+    path:    /gadmin/restaurant/{restaurant_id}/menus/{menu_id}
+    defaults: { _controller: 'app\Controllers\Admin::menus' }
+    methods:  [GET,POST]
+admin_menus:
+    path:    /gadmin/restaurant/{restaurant_id}/menus
+    defaults: { _controller: 'app\Controllers\Admin::menus' }
+    methods:  [GET,POST] 
+admin_menu_add:
+    path:    /gadmin/restaurant/{restaurant_id}/menu/add
+    defaults: { _controller: 'app\Controllers\Admin::menuAdd' }
+    methods:  [GET,POST] 
+admin_menu_edit:
+    path:    /gadmin/restaurant/{restaurant_id}/menu/edit/{menu_id}
+    defaults: { _controller: 'app\Controllers\Admin::menuEdit' }
+    methods:  [GET,POST]  
+admin_menu_delete:
+    path:    /gadmin/restaurants/{restaurant_id}/menu/delete/{menu_id}
+    defaults: { _controller: 'app\Controllers\Admin::menuDelete' }
+    methods:  [GET,POST]     

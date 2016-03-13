@@ -1,0 +1,25 @@
+parameters:
+
+    auth_secret: h^(Svs 9ZT$fdM5NAW@XJpb-T]%]lA8Z|h1zNXUO33P#C#7++Q?>)2; Js3/+GVH
+
+    database:
+      adapter: doctrine
+    doctrine:
+      host:     localhost
+      driver:   pdo_mysql
+      user:     grubbler_dba
+      password: rAg4~jrAg!4**j664*&^%$#
+      dbname:   grubbler_db
+
+    googleapi:
+      key: AIzaSyB2O03ilyY4gnl90rEJgoFvptViWzwjpG0
+    stripe:
+      public_key: pk_test_9HqakS2gUt2ufQGZ6Umv8Sm7
+      secret_key: sk_test_gjNCboG3YeGVwYMRxRiocd7L
+    phaxio:
+      phaxio_key:  d7060a62f72f92c1f2410b6549818ee22447c1a8
+      phaxio_secret:  cce3775d3ceb7e90bf2964cffdfab7f31c966556
+      phaxio_api_host: https://api.phaxio.com/v1/
+    twilio:
+      twilio_sid: ACa32811d054acb536027e084adbe113a8
+      twilio_token: 02c0d14d73cd844e90630c986b7e6cc0
